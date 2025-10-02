@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web - Masing-masing</title>
+    
+    <!-- HTML Favicon -->
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+    
+    <!-- HTML CSS External -->
+    <link rel="stylesheet" href="wad.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-section">
+                <!-- HTML Picture -->
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Foto masing-masing" class="profile-img">
+                
+                <!-- HTML Heading 1/2/3/4/5/6 -->
+                <div>
+                    <h1>Hafizh Rafi Maulana Suyufi</h1>
+                    <p class="subtitle">102022400210 / Rekayasa Industri / S1 Sistem Informasi</p>
+                </div>
+            </div>
+            
+            <!-- HTML Link -->
+            <div class="social-links">
+                <a href="https://github.com/username-masing-masing" target="_blank">🔗 Github</a>
+                <a href="https://instagram.com/username" target="_blank">📷 Instagram</a>
+                <a href="mailto:email@example.com" target="_blank">📧 Email</a>
+            </div>
+        </header>
+        
+        <div class="content">
+            <!-- HTML Date and Time -->
+            <div class="datetime text-center">
+                <strong>Waktu Akses:</strong> <span id="current-datetime"></span>
+            </div>
+            
+            <h2>Tentang Saya</h2>
+            <div class="info-box text-justify">
+                <p style="margin-top: 10px;">Telkom University S1 Information Systems student who wants to focus on technology, especially IoT and
+ Programming. Has experience in Cybersecurity and Network for 3 years and an internship program at PT.
+ Internet Madju Abad Milenindo for 6 months. I am used to using various OS (Windows , Ubuntu, and
+ Linux). has experience using Mikrotik, Unifi Ecosystem and also likes to create designs using canva and
+ figma tools. Can work individually or as part of a team</p>
+            </div>
+            
+            <h2>Keterampilan</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Sistem Operasi</div>
+                <div class="skill-item">Cybersecurity</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Git & GitHub</div>
+            </div>
+            
+            <h2>Pengalaman Pendidikan</h2>
+            <!-- HTML Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tahun</th>
+                        <th>Institusi</th>
+                        <th>Program</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024 - Sekarang</td>
+                        <td>Universitas Telkom</td>
+                        <td>S1 Sistem Informasi</td>
+                        <td>Aktif</td>
+                    </tr>
+                    <tr>
+                        <td>2021 - 2024</td>
+                        <td>SMK Telkom Malang</td>
+                        <td>TKJ</td>
+                        <td>Lulus</td>
+                    </tr>
+                    <tr>
+                        <td>2018 - 2021</td>
+                        <td>MTsN 1 Lamongan</td>
+                        <td>Matematika</td>
+                        <td>Lulus</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 Personal Web - Masing-masing | Dibuat dengan HTML & CSS</p>
+            <p style="margin-top: 10px;">Publikasikan ke: <strong>username-masing-masing.github.io</strong></p>
+        </footer>
+    </div>
+    
+    <script>
+        // HTML Date and Time - Update real-time
+        function updateDateTime() {
+            const now = new Date();
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+            document.getElementById('current-datetime').textContent = now.toLocaleDateString('id-ID', options);
+        }
+        
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+    </script>
+</body>
+</html>
