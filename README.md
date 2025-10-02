@@ -32,7 +32,7 @@ Personal Web untuk menampilkan informasi personal, keterampilan, pengalaman pend
 ```
 personal-web/
 ├── index.html
-├── style.css
+├── wad.css
 └── README.md
 ```
 
@@ -49,7 +49,7 @@ personal-web/
 ### Local
 1. Download/clone repository
 2. Edit `index.html` sesuai data Anda
-3. Buka `index.html` di browser
+3. Buka `index.html` di browser menggunakan live server
 
 ### Deploy ke GitHub Pages
 1. Buat repository: `username-masing-masing.github.io`
